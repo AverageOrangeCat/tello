@@ -532,7 +532,7 @@ class Tello:
     #
 
     def mdirection(self, x=0):
-        out = self._exec_command("mdirection" + str(x))
+        out = self._exec_command("mdirection " + str(x))
 
         if out == "ok":
             return True
@@ -556,7 +556,7 @@ class Tello:
     #
 
     def ap(self, ssid="ssid", passwd="passwd"):
-        out = self._exec_command("ap" + str(ssid) + " " + str(passwd))
+        out = self._exec_command("ap " + str(ssid) + " " + str(passwd))
 
         if out == "ok":
             return True
